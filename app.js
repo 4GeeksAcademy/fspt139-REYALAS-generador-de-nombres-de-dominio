@@ -1,22 +1,19 @@
 let pronoun = ['the', 'our'];
 let adj = ['great', 'big'];
 let noun = ['jogger', 'racoon'];
-let extenciones = [`.com`, `.net`, `.us`, `.io`, `.etc`]
+let extenciones = [`.com`, `.net`, `.us`, `.io`];
 
-for (let index = 0; index < pronoun.length; index++) {
-    const elementpronoun = pronoun[index];
+for (let i = 0; i < pronoun.length; i++) {
+
+    for (let i = 0; i < adj.length; i++) {
+
+        for (let i = 0; i < noun.length; i++) {
+
+            for (let i = 0; i < extenciones.length; i++) {
+                let domainName = pronoun[i] + adj[j] + noun[k] + extensions[l];
 
 
-    for (let index = 0; index < adj.length; index++) {
-        const elementadj = adj[index];
-
-        for (let index = 0; index < noun.length; index++) {
-            const elementnoun = noun[index];
-
-            for (let index = 0; index < extenciones.length; index++) {
-                const elementextenciones = extenciones[index];
-
-                console.log(elementpronoun + elementadj + elementnoun + elementextenciones)
+                console.log(domainName);
 
             }
 
@@ -25,3 +22,5 @@ for (let index = 0; index < pronoun.length; index++) {
     }
 
 }
+
+
